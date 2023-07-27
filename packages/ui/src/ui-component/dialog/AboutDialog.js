@@ -61,7 +61,7 @@ const AboutDialog = ({ show, onCancel }) => {
                                 <TableRow sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                     <TableCell component='th' scope='row'>
                                         <a target='_blank' rel='noreferrer' href={data.html_url}>
-                                            {data.name}
+                                            {data.published_at}
                                         </a>
                                     </TableCell>
                                     <TableCell>{moment(data.published_at).fromNow()}</TableCell>
